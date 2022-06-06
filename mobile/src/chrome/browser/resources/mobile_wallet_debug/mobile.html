@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Netbox.Browser Debug</title>
+<style type="text/css">
+#debug li {
+            word-wrap: break-word;
+        }
+        .header {
+            display: flex !important;
+        }
+</style>
+<link href="css/app.css" rel="stylesheet"></head>
+<body>
+<div class="header js-header">
+<div class="header__nav">
+<span class="header__current-view js-header__currcent-view">Developers only</span>
+<div class="header__quote js-header__quote">
+<span class="header__nbx-quote js-header__nbx-quote"></span>
+</div>
+</div>
+</div>
+<div class="app__container">
+<div class="app__main">
+<h1 class="message">Actions</h1>
+<div class="debug__filter filter filter--input input input--filter js-input filter--payment transaction__filter--type filter--type js-debug__select">
+<div class="filter__label js-label js-debug__select-label"></div>
+<div class="filter__options js-debug__select-options"></div>
+</div>
+<button class="button js-debug__execute">Execute</button>
+<h1 class="message">Info</h1>
+<ul id="debug">
+</ul>
+</div>
+</div>
+<script type="text/javascript" src="js/app.js"></script></body></html>

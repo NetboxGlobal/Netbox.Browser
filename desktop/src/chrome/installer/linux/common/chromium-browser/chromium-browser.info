@@ -1,0 +1,33 @@
+# Copyright (c) 2009 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+#
+# This file provides common configuration information for building
+# chromium-browser packages for various platforms.
+
+# Base name of the package.
+PACKAGE="netbox-browser"
+
+# Base name of the snap package
+SNAPNAME="chromium"
+
+# Filename of the main executable (for generating launcher scripts, etc.)
+PROGNAME=netboxbrowser
+
+# Base directory for package installation.
+INSTALLDIR=/opt/netboxglobal/netboxbrowser
+
+# Display string for desktop menu/icon.
+MENUNAME="Netbox.Browser"
+
+# Brief package description.
+SHORTDESC="Netbox.Browser carries blockchain wallet"
+
+# Detailed package description.
+FULLDESC="Netbox.Browser is the first decentralized blockchain backed web browser"
+
+# Package maintainer information.
+# TODO(mmoss) Setup a mailbox for this address
+MAINTNAME="Netbox.Browser Support Team"
+MAINTMAIL="support@netbox.global"
+PRODUCTURL="https://netbox.global/"

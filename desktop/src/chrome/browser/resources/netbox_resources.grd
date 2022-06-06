@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grit latest_public_release="0" current_release="1" output_all_resource_defines="false">
+    <outputs>
+        <output filename="grit/netbox_resources.h" type="rc_header">
+        <emit emit_type='prepend'></emit>
+    </output>
+        <output filename="netbox_resources.pak" type="data_package" />
+    </outputs>
+    <release seq="1">
+        <includes>
+            <include name="IDR_WALLET_HTML_MAIN" file="wallet\index.html" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+
+            <include name="IDR_WALLET_JS" file="wallet\js\app.js" type="BINDATA" />
+            <include name="IDR_WALLET_CSS" file="wallet\css\app.css" flattenhtml="true" type="chrome_html" />
+
+            <include name="IDR_WALLET_IMG_APPSTORE"             file="wallet\img\appStore.svg" type="BINDATA" />
+            <include name="IDR_WALLET_IMG_DELETE"               file="wallet\img\delete.svg" type="BINDATA" />            
+            <include name="IDR_WALLET_IMG_ICONS"                file="wallet\img\icons.svg" type="BINDATA" />
+            <include name="IDR_WALLET_IMG_LOADINGLOGO"          file="wallet\img\loading-logo.svg" type="BINDATA" />
+            <include name="IDR_WALLET_IMG_LOGO"                 file="wallet\img\logo.svg" type="BINDATA" />
+            <include name="IDR_WALLET_IMG_PLAYMARKET"           file="wallet\img\playMarket.svg" type="BINDATA" />
+            <include name="IDR_WALLET_IMG_SLIDEARROW"           file="wallet\img\slider-arrow.svg" type="BINDATA" />
+
+            <include name="IDR_WALLET_FONT_MONTSERRAT_MEDIUM"       file="wallet\fonts\Montserrat-Medium.ttf" type="BINDATA" />
+            <include name="IDR_WALLET_FONT_MONTSERRAT_SEMIBOLD"     file="wallet\fonts\Montserrat-SemiBold.ttf" type="BINDATA" />
+            <include name="IDR_WALLET_FONT_MONTSERRAT_EXTRABOLD"    file="wallet\fonts\Montserrat-ExtraBold.ttf" type="BINDATA" />
+            <include name="IDR_WALLET_FONT_UBUNTU_REGULAR"      file="wallet\fonts\Ubuntu-Regular.ttf" type="BINDATA" />
+
+            <include name="IDR_DEBUG_HTML" file="netbox\debug\index.html" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+            <include name="IDR_DEBUG_JS" file="netbox\debug\debug.js" type="BINDATA" />
+
+            <include name="IDR_NETBOXINFO_HTML_MAIN" file="netboxinfo\netboxinfo.html" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+            <include name="IDR_NETBOXINFO_JS" file="netboxinfo\netboxinfo.js" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+            <include name="IDR_NETBOXINFO_APP_JS" file="netboxinfo\netboxinfo_app.js" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+
+            <include name="IDR_DAPSTORE_HTML_MAIN" file="dapstore\index.html" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+
+            <include name="IDR_DAPSTORE_JS" file="dapstore\js\app.js" type="BINDATA" />
+            <include name="IDR_DAPSTORE_CSS" file="dapstore\css\app.css" flattenhtml="true" type="chrome_html" />
+
+            <include name="IDR_DAPSTORE_IMG_1" file="dapstore\img\1st.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_2" file="dapstore\img\2nd.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_3" file="dapstore\img\3rd.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_APPSTORE" file="dapstore\img\appStore.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_DELETE" file="dapstore\img\delete.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_ICONS" file="dapstore\img\icons.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_LOADINGLOGO" file="dapstore\img\loading-logo.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_LOGO" file="dapstore\img\logo.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_PLAYMARKET" file="dapstore\img\playMarket.svg" type="BINDATA" />
+            <include name="IDR_DAPSTORE_IMG_SLIDERARROW" file="dapstore\img\slider-arrow.svg" type="BINDATA" />
+
+            <include name="IDR_NEWS_HTML_MAIN" file="news\news.html" flattenhtml="true" allowexternalscript="true" type="BINDATA" />
+            <include name="IDR_NEWS_JS" file="news\js\news.js" type="BINDATA" />
+            <include name="IDR_NEWS_CSS" file="news\css\news.css" type="BINDATA" />
+            <include name="IDR_IMAGE_BLANK" file="news\img\528x352.png" type="BINDATA" />
+            <include name="IDR_IMAGE_LOGO" file="news\img\cointelegraph.svg" type="BINDATA" />
+        </includes>
+    </release>
+</grit>

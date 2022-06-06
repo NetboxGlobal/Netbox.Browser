@@ -1,0 +1,23 @@
+[
+    {
+        "large_icon_url": "https://netbox.global/browsertopsites/logo256.png",
+        "title": "Netbox.Global",
+        "url": "https://netbox.global/"
+    },
+    {
+        "favicon_url": "https://netbox.global/browsertopsites/logo256.png",
+        "title": "Wallet",
+        "url": "chrome://wallet"
+    },
+    {
+        "large_icon_url": "https://netbox.global/browsertopsites/logo256.png",
+        "title": "Netbox.Lottery",
+        "url": "https://lottery.netbox.global/"
+    },
+    {
+        "large_icon_url": "https://netbox.global/browsertopsites/logo256.png",
+        "title": "Netbox.Store",
+        "url": "https://dapp-store.netbox.global/"
+    }
+
+]

@@ -1,0 +1,20 @@
+<!-- Copyright 2017 The Chromium Authors -->
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>netbox-browser.desktop</id>
+  <update_contact>support@netbox.global</update_contact>
+  <name>Netbox.Browser</name>
+  <summary>Netbox.Browser carries blockchain wallet</summary>
+  <description>Netbox.Browser is the first decentralized blockchain backed web browser</description>
+  <url type="homepage">https://netbox.global</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.netbox.global/Netbox.Browser/ubuntu_screenshot_1.png</image>
+      <caption/>
+    </screenshot>
+  </screenshots>
+  <translation/>
+  <developer_name>Netbox</developer_name>
+  <url type="bugtracker">https://netbox.global/contacts</url>
+  <url type="help">https://netbox.global/contacts</url>
+</component>

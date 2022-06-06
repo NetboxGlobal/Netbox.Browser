@@ -1,0 +1,354 @@
+html {
+  /* Material Design constants */
+  --md-tile-margin: 16px;
+  --md-tile-size: 112px;
+  /* This will be overridden based on the viewport width, see below. */
+  --column-count: 3;
+  /* We add an extra pixel because rounding errors on different zooms can
+   * make the width shorter than it should be. */
+  --content-width: calc(var(--column-count) * var(--md-tile-size) + 1px);
+  --content-height: calc(var(--content-width) * 0.66);
+  height: 100%;
+  --interval: 1rem;
+  --font-family: "Open sans", sans-serif;
+}
+
+/* width >= (4 cols * 112px (tile width) + 112px (1 tile margin)) */
+@media (min-width: 560px) {
+  html {
+    --column-count: 4;
+    --right-font-size: 0.85rem;
+  }
+}
+
+/* width >= (5 cols * 112px (tile width) + 112px (1 tile margin)) */
+@media (min-width: 672px) {
+  html {
+    --column-count: 5;
+    --right-font-size: 0.85rem;
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
+
+header {
+  margin: 0px auto 0 auto;
+  width: var(--content-width);
+  display: none;
+  z-index: 10;
+  box-sizing: border-box;
+  padding-bottom: calc(0.5 * var(--interval));
+}
+
+@media (min-width: 672px) {
+  .header__outer {
+    width: 67%;
+  }
+}
+
+.header__inner {
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-right: var(--interval);
+}
+
+.loaded header {
+  display: block;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  height: 2.2rem;
+}
+
+.lang {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+}
+
+.lang__button {
+  cursor: pointer;
+  height: 1rem;
+  font-size: 0.68rem;
+  line-height: 1rem;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.lang__button-close, .lang__button-open {
+  line-height: 1rem;
+  font-size: 0.7rem;
+}
+
+.lang__button-open {
+  display: none;
+}
+
+.lang.open .lang__button-close {
+  display: none;
+}
+
+.lang.open .lang__button-open {
+  display: inline;
+}
+
+.lang__list {
+  position: absolute;
+  display: none;
+  top: 1rem;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+}
+
+.lang__list {
+  border: 1px solid #000;
+}
+
+.lang.open .lang__list {
+  display: block;
+}
+
+.lang__list ul, .lang__list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.lang__list ul {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.lang__list li {
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.68rem;
+  font-family: var(--font-family);
+}
+
+.lang__list li.active {
+  display: none;
+}
+
+.lang__list li:hover {
+  color: #ff9606;
+  cursor: pointer;
+}
+
+.crypto {
+  margin: 0px auto 0 auto;
+  width: var(--content-width);
+  display: none;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.loaded .crypto {
+  display: -webkit-box;
+  display: flex;
+}
+
+.crypto ul, .crypto ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.slider {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--content-height);
+  font-size: 0;
+}
+
+.slider__inner {
+  position: relative;
+  margin-right: var(--interval);
+}
+
+.rtl .slider__inner {
+  margin-left: var(--interval);
+  margin-right: 0;
+}
+
+@media (min-width: 672px) {
+  .slider {
+    width: 67%;
+    height: calc(0.67 * var(--content-height));
+  }
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item.active {
+  display: block;
+}
+
+.slider__item-img {
+  line-height: 0;
+  font-size: 0;
+  max-width: 100%;
+}
+
+.slider__item-a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  li1ne-height: 1.5rem;
+}
+
+a.slider__item-a:hover {
+  text-decoration: underline;
+}
+
+.slider__item-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  line-height: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+}
+
+.slider__item-desc a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.slider__item-desc a:hover {
+  text-decoration: underline;
+}
+
+.texts {
+  width: 33%;
+  display: none;
+  he1ight: 100%;
+}
+
+@media (min-width: 672px) {
+  .texts {
+    display: block;
+  }
+}
+
+.texts__buttons {
+  display: -webkit-box;
+  display: flex;
+  height: 2rem;
+  border-bottom: 1px solid #ff9606;
+  line-height: 2rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.texts__button {
+  width: 50%;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.picked .texts__button.picked, .latest .texts__button.latest {
+  background: #ff9606;
+  cursor: default;
+}
+
+.texts__tab {
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.picked .texts__tab.picked {
+  display: block;
+}
+
+.latest .texts__tab.latest {
+  display: block;
+}
+
+.texts__tab ul {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: calc(100% - 2rem);
+}
+
+.texts__tab li {
+  box-sizing: border-box;
+  display: block;
+  line-height: 1rem;
+  font-size: 0.68rem;
+  font-family: var(--font-family);
+  border-bottom: 1px solid #ddd;
+  padding: 0.3rem 0;
+}
+
+.texts__tab li:last-child {
+  border-bottom: none;
+}
+
+.texts__tab li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.texts__tab li:hover a {
+  color: #ff9606;
+}
+
+.templates {
+  display: none;
+}

@@ -1,0 +1,10 @@
+COMPANY_FULLNAME=The Netbox.Browser Authors
+COMPANY_SHORTNAME=The Netbox.Browser Authors
+PRODUCT_FULLNAME=NetboxBrowser
+PRODUCT_SHORTNAME=NetboxBrowser
+PRODUCT_INSTALLER_FULLNAME=NetboxBrowser
+PRODUCT_INSTALLER_SHORTNAME=NetboxBrowser
+COPYRIGHT=Copyright 2021 The Netbox.Browser Authors. All rights reserved.
+MAC_BUNDLE_ID=global.netbox.browser
+MAC_CREATOR_CODE=Cr24
+MAC_TEAM_ID=

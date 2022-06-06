@@ -1,0 +1,16 @@
+#ifndef COMPONENTS_NETBOXGLOBAL_UTILS_WALLET_LAUNCH_H_
+#define COMPONENTS_NETBOXGLOBAL_UTILS_WALLET_LAUNCH_H_
+
+namespace Netboxglobal
+{
+
+enum WALLET_LAUNCH
+{
+    START = 1,
+    WAIT_AND_START,
+    STOP_AND_START
+};
+
+}
+
+#endif

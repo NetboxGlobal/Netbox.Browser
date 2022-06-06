@@ -1,0 +1,28 @@
+
+static_library("netboxglobal_utils") {
+  sources = [
+    "utils.cc",
+    "utils.h",
+    "wallet_utils.cc",
+    "wallet_utils.h",
+  ]
+
+
+  if (is_win) {
+    sources += [
+      "wallet_utils_win.cc",
+    ]
+  } else if (is_mac) {
+    sources += [
+      "wallet_utils_mac.cc",
+    ]
+  } else if (is_linux) {
+    sources += [
+      "wallet_utils_linux.cc",
+    ]
+  }
+
+  deps = [
+    "//base",
+  ]
+}
