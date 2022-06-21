@@ -1,0 +1,1 @@
+The following repository contains the difference between the original sources of Chromium version 92.0.4515.135 in the desktop/src folder for Windows/Ubuntu/Mac and between Chromium version 89.0.4389.105 in mobile/src folder for android
